@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [DataClasses.cs](./CS/MasterDetailExample/DataClasses.cs) (VB: [DataClasses.vb](./VB/MasterDetailExample/DataClasses.vb))
+* [DataHelper.cs](./CS/MasterDetailExample/DataHelper.cs) (VB: [DataHelper.vb](./VB/MasterDetailExample/DataHelper.vb))
+* [Form1.cs](./CS/MasterDetailExample/Form1.cs) (VB: [Form1.vb](./VB/MasterDetailExample/Form1.vb))
+<!-- default file list end -->
 # How to create a master-detail report in a RichEditControl
 
 
