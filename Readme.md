@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/RichEditMasterDetailMailMerge/Form1.cs) (VB: [Form1.vb](./VB/RichEditMasterDetailMailMerge/Form1.vb))
+* [Program.cs](./CS/RichEditMasterDetailMailMerge/Program.cs) (VB: [Program.vb](./VB/RichEditMasterDetailMailMerge/Program.vb))
+<!-- default file list end -->
 # How to create a master-detail report in a RichEditControl
 
 
