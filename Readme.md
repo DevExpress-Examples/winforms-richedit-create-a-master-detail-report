@@ -8,8 +8,7 @@
 
 This example illustrates an older approach to creating master-detail documents.
 
->[!TIP]
->
+> [!IMPORTANT]
 > To learn about a newer and more convenient approach to master-detail mail merge, refer to the following article: [Create a Master-Detail Report with a Detail Report Band](https://docs.devexpress.com/XtraReports/4785/create-reports/create-a-master-detail-report-with-a-detail-report-band).
 
 
