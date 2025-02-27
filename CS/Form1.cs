@@ -4,14 +4,8 @@ using DevExpress.XtraRichEdit.API.Native;
 using DevExpress.XtraTab;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace RichEditMasterDetailMailMerge
 {
@@ -40,7 +34,7 @@ namespace RichEditMasterDetailMailMerge
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Load main template, master and detail documents to the corresponding RichEditCotnrols:
+            //Load main template, master and detail documents to the corresponding RichEditControls:
             mainRichEdit.LoadDocument("Templates\\Template.rtf");
             masterRichEdit.LoadDocument("Templates\\Master.rtf");
             detailRichEdit.LoadDocument("Templates\\Detail.rtf");

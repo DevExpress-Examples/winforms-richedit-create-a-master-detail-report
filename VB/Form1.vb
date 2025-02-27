@@ -2,16 +2,8 @@
 Imports DevExpress.XtraRichEdit
 Imports DevExpress.XtraRichEdit.API.Native
 Imports DevExpress.XtraTab
-Imports System
-Imports System.Collections.Generic
-Imports System.ComponentModel
 Imports System.Data
-Imports System.Drawing
 Imports System.Globalization
-Imports System.Linq
-Imports System.Text
-Imports System.Threading.Tasks
-Imports System.Windows.Forms
 
 Namespace RichEditMasterDetailMailMerge
     Partial Public Class Form1
@@ -37,7 +29,7 @@ Namespace RichEditMasterDetailMailMerge
             xtraTabPage4.Tag = resultRichEdit
         End Sub
         Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
-            'Load main template, master and detail documents to the corresponding RichEditCotnrols:
+            'Load main template, master and detail documents to the corresponding RichEditControls:
             mainRichEdit.LoadDocument("Templates\Template.rtf")
             masterRichEdit.LoadDocument("Templates\Master.rtf")
             detailRichEdit.LoadDocument("Templates\Detail.rtf")

@@ -19,7 +19,7 @@ This project uses a two-level **Categories-Products** hierarchical data source, 
 
 ## Files to Review
 
-* [Form1.cs](./CS/RichEditMasterDetailMailMerge/Form1.cs) (VB: [Form1.vb](./VB/RichEditMasterDetailMailMerge/Form1.vb))
+* [Form1.cs](./CS/Form1.cs) (VB: [Form1.vb](./VB/Form1.vb))
 
 ## Documentation
 
