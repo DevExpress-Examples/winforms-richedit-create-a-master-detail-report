@@ -1,47 +1,47 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-        <TargetFramework>net8.0-windows</TargetFramework>
-        <OutputType>WinExe</OutputType>
-        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-        <UseWindowsForms>true</UseWindowsForms>
-        <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
-    </PropertyGroup>
-    <ItemGroup>
-      <Compile Remove="Pictures\**" />
-      <EmbeddedResource Remove="Pictures\**" />
-      <None Remove="Pictures\**" />
-    </ItemGroup>
-    <ItemGroup>
-      <None Remove="Data\template-intro.rtf" />
-      <None Remove="Data\template.docx" />
-    </ItemGroup>
-    <ItemGroup>
-        <None Update="Templates\Detail.rtf">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="Templates\Master.rtf">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="Templates\Template.rtf">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-    </ItemGroup>
-    <ItemGroup>
-        <EmbeddedResource Include="nwind.xml">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </EmbeddedResource>
-    </ItemGroup>
-    <ItemGroup>
-        <PackageReference Include="DevExpress.Win.Design" Version="25.2.2" />
-        <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-        <PackageReference Include="DevExpress.Win.RichEdit" Version="25.2.2" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="Data\template-intro.rtf">
-          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </Content>
-        <Content Include="Data\template.docx">
-          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </Content>
-    </ItemGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<OutputType>WinExe</OutputType>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Remove="Pictures\**" />
+		<EmbeddedResource Remove="Pictures\**" />
+		<None Remove="Pictures\**" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Remove="Data\template-intro.rtf" />
+		<None Remove="Data\template.docx" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="Templates\Detail.rtf">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Templates\Master.rtf">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Templates\Template.rtf">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="nwind.xml">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="DevExpress.Win.Design" Version="25.2.1-alpha-25315" />
+		<PackageReference Include="DevExpress.Win.RichEdit" Version="25.2.1-alpha-25315" />
+		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="Data\template-intro.rtf">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\template.docx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
 </Project>
