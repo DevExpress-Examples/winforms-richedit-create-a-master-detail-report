@@ -4,27 +4,30 @@
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
 
-# Rich Text Editor for WinForms - Create a Master-Detail Report
+# Rich Text Editor for WinForms - Use Mail Merge to Create a Master-Detail Report
 
-This example demonstrates the use of the Rich Text Editor's Mail Merge functionality to generate invoices from master-detail templates.
+This example uses the Rich Text Editor control and its Mail Merge functionality to generate a product catalog report based on a master-detail template.
 
-This project uses a two-level **Categories-Products** hierarchical data source, retrieved from the **nwind.xml** file. 
+This project uses a two-level **Categories-Products** data source retrieved from **nwind.xml**. 
 
 ![result](./media/96c27986-26f4-4775-b794-285e373adea7.png)
 
 ## Implementation Details
 
-Rich Text Editor allows you to perform a mail merge with master-detail templates. The ``TableStart:Name`` and ``TableEnd:Name`` merge fields define master and detail regions. The region name should match the group or table name in your data source. 
+Rich Text Editor supports master-detail mail merge templates. ``TableStart:Name`` and ``TableEnd:Name`` merge fields define master and nested detail regions. Region names should match group or table names in your data source. 
 
 This example loads the template to the `RichEditControl` instance located in the **Main Template** tab.
 
 ![winforms richedit template tab](./media/richedit-template-tab.png)
 
-Call the [RichEditControl.CreateMailMergeOptions()](https://docs.devexpress.com/OfficeFileAPI/DevExpress.XtraRichEdit.RichEditControl.CreateMailMergeOptions) method to create a new [MailMergeOptions](https://docs.devexpress.com/OfficeFileAPI/DevExpress.XtraRichEdit.API.Native.MailMergeOptions) object. This object contains mail merge options. Specify the object's [DataSource](https://docs.devexpress.com/OfficeFileAPI/DevExpress.XtraRichEdit.RichEditMailMergeOptions.DataSource) property to set the mail merge database.
- 
-Pass the `MailMergeOptions` object as the [RichEditControl.MailMerge](https://docs.devexpress.com/OfficeFileAPI/DevExpress.XtraRichEdit.RichEditControl.MailMerge.overloads) method parameter to apply specified options. 
+This example uses the following APIs to specify the data source: 
 
-In this project, the [RichEditControl.MailMerge](https://docs.devexpress.com/OfficeFileAPI/DevExpress.XtraRichEdit.RichEditControl.MailMerge.overloads) exports the result to the `RichEditControl` instance located in the **Result** tab.
+- [RichEditControl.CreateMailMergeOptions()](https://docs.devexpress.com/OfficeFileAPI/DevExpress.XtraRichEdit.RichEditControl.CreateMailMergeOptions) method - initializes an object with mail merge settings. 
+- [RichEditMailMergeOptions.DataSource](https://docs.devexpress.com/OfficeFileAPI/DevExpress.XtraRichEdit.RichEditMailMergeOptions.DataSource) - sets the data source. 
+- [RichEditControl.MailMerge](https://docs.devexpress.com/OfficeFileAPI/DevExpress.XtraRichEdit.RichEditControl.MailMerge.overloads) method - accepts the settings object as a parameter. 
+
+In this project, the [RichEditControl.MailMerge](https://docs.devexpress.com/OfficeFileAPI/DevExpress.XtraRichEdit.RichEditControl.MailMerge.overloads) method exports the result to the `RichEditControl` instance located in the **Result** tab.
+
 
 ![winforms richedit template tab](./media/richedit-result-tab.png)
 
